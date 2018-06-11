@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
     private void request() {
     new Thread(new Runnable() {
         @Override
-        public void run() {
+        public void run() { 
+
+
             OkHttpClient client = new OkHttpClient();
             Request request = new Request.Builder()
                     .url("https://www.baidu.com/")
